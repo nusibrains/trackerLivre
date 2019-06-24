@@ -19,6 +19,6 @@ from .views import home
 app_name = 'ticket'
 
 urlpatterns = [
-    # path(r'^$', 'tracker.views.home', name='home'),
+    # regex (\w+) raccourcis de [Aa-Zz]+
     re_path(r'^home/(\w+)', home, name='home'),
 ]
